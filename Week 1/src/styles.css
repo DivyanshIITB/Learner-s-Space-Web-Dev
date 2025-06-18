@@ -1,0 +1,313 @@
+body {
+  background-color: rgb(167, 165, 177);   
+  color: #092597;              
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0b0b01;
+  color: #3166c8;
+  padding: 1em;
+}
+
+li {
+  margin-bottom: 6px; /* reduce space between list items */
+}
+
+.event-img {
+  margin-top: 0px;  /* reduces gap between text and image */
+  display: block;   /* ensures it doesn't sit inline */
+}
+
+/* Center and style the main heading */
+header h1 {
+  font-size: 3rem;         /* Increase font size */
+  text-align: center;      /* Center align */
+  margin-top: 20px;
+}
+
+/* Section headings like "Timeline", "Growth", etc. */
+section h2 {
+  font-size: 2rem;         /* Slightly larger font for section titles */
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+/* Optional: Make timeline items look nicer */
+section ul {
+  list-style: disc inside;
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+nav a {
+  font-size: 1.2rem;       /* Increase text size */
+  padding: 12px 20px;      /* Increase button size */
+  margin: 4px;
+  border-radius: 8px;
+  background-color: #112852;
+  color: #222222;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #074688;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  padding: 0;
+}
+
+#timeline li {
+  margin-bottom: 60px; /* Adjust this as needed */
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #160562;
+  font-size: 32px; /* or whatever size looks good */
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+nav ul li a {
+  color: rgb(96, 202, 190);
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.grid img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  text-align: center;
+  color: rgb(96, 202, 190);
+  font-size: 18px;
+  padding: 8px 0;
+  background-color: #112852;
+  border-radius: 0 0 10px 10px;
+  font-weight: 500;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation: fade 0.8s ease-in-out;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-links a {
+  color: #004080;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+#footer p {
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+  #footer {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .footer-links a {
+    padding: 5px;
+  }
+}
+
+/* Mobiles (up to 480px) */
+@media (max-width: 480px) {
+  #footer {
+    font-size: 12px;
+    padding: 15px 5px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+#quiz-section {
+  padding: 20px;
+  margin-top: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0b0b01;
+}
+
+#quiz-section h2 {
+  text-align: center;
+  color: #3166c8;
+}
+
+#quiz-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+#quiz-form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2acc2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+#quiz-form button:hover {
+  background-color: #19b220;
+}
+
+#quiz p {
+  color: #ADD8E6; /* Light blue */
+}
+
+/* For the radio button labels */
+#quiz label {
+  color: #FFFFFF; /* White or any color you prefer */
+  font-size: 16px;
+}
+
+/* Optional: Hover effect for radio labels */
+#quiz label:hover {
+  color: #87CEFA; /* Sky blue on hover */
+}
+
+#quiz-question {
+  color: rgb(96, 202, 190); /* or any color you prefer */
+  font-size: 1.1rem; /* optional, adjust as needed */
+}
+
+#quiz-form {
+  color: rgb(96, 202, 190); /* or any color you prefer */
+  font-size: 1.1rem; /* optional, adjust as needed */
+}
+
+#quiz-result {
+  text-align: center;
+}
+
+#timeline li {
+  margin-bottom: 0px;  /* controls space between each li */
+}
+
+#timeline li img.event-img {
+  margin-top: 40px;      /* controls space between text and image */
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
